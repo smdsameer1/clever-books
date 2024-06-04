@@ -1,0 +1,214 @@
+body {
+    background: linear-gradient(to bottom right, #ff7e5f, #feb47b, #ffcd94, #ffdcb6);
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  }
+  
+  header {
+    background-color: black;
+    padding: 20px 0;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .logo {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  .logo img {
+    width: 50px; /* Adjust the width of the logo */
+    height: auto;
+    margin-right: 10px;
+  }
+  .logo span {
+    font-size: 1.5rem; /* Adjust the font size of the logo text */
+    font-weight: bold;
+    color: white;
+  }
+  
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e1e1e1;
+    padding: 50px 0;
+    position: relative;
+    background: url('https://www.shutterstock.com/shutterstock/photos/2200597295/display_1500/stock-photo-business-process-and-workflow-automation-with-flowchart-hand-holding-wooden-cog-flowing-process-2200597295.jpg') no-repeat center center/cover;
+  color: white;
+  }
+  
+  .hero-content {
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+  }
+  
+  .hero-image {
+    margin-top: 20px;
+    z-index: 1;
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .key-problems,
+  .key-metrics,
+  .reviews,
+  .problem-target {
+    text-align: center;
+  }
+  
+  .problems-container,
+  .metrics-container,
+  .reviews-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .problem-card,
+  .metric-card,
+  .review-item {
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .problem-card img,
+  .metric-card img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+  
+  .problem-card i,
+  .metric-card i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .tabs button {
+    background: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: background 0.3s;
+  }
+  
+  .tabs button {
+    background: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: background 0.3s;
+  }
+  
+  .tabs button.active {
+    background: #333;
+    color: white;
+  }
+  
+  .tab-content {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .cta {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    background: url("https://investorplace.com/wp-content/uploads/2024/01/hand-growth-stocks-1600-768x432.jpg");
+  }
+  
+  .cta button {
+    background-color: #e74c3c;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .cta button:hover {
+    background-color: #c0392b;
+  }
+  
+  footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .hero {
+      padding: 20px 0;
+    }
+  
+    .hero-content {
+      margin-bottom: 20px;
+    }
+  
+    .hero-image {
+      display: none;
+    }
+  
+    .problems-container,
+    .metrics-container,
+    .reviews-container {
+      flex-direction: column;
+    }
+  
+    .problem-card,
+    .metric-card,
+    .review-item {
+      width: 90%;
+      margin: 10px auto;
+    }
+    .logo img {
+        width: 40px; /* Adjust the width of the logo for smaller screens */
+      }
+      .logo span {
+        font-size: 1.3rem; /* Adjust the font size of the logo text for smaller screens */
+      }
+      
+  }
